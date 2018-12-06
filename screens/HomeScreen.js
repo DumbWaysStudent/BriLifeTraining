@@ -24,7 +24,7 @@ export default class HomeScreen extends Component {
                     <List>
                         {this.state.categories.map((category)=>(
                             <ListItem>
-                                <Text>{category.title}</Text>
+                                <Text>{state}</Text>
                             </ListItem>
                         ))}
                     </List>                    

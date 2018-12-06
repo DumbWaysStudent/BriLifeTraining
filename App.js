@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
-import { createStackNavigator, createAppContainer } from "react-navigation"
 
-import HomeScreen from './screens/HomeScreen'
-import DetailScreen from './screens/DetailScreen'
+//redux
+import { Provider } from 'react-redux'
+import store from './redux/store'
 
-const AppNavigator = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
-  },
-  Detail: {
-    screen: DetailScreen
-  }
-});
+import CategoryScreen from './screens/CategoryScreen'
 
-const AppContainer = createAppContainer(AppNavigator)
+export default class App extends Component{
 
-export default class App extends Component {
-  render() {
-    return <AppContainer />
+  render(){
+    return (
+      <Provider store={store}>
+        <CategoryScreen/>
+      </Provider>
+    )
   }
 }
