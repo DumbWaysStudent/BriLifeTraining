@@ -9,17 +9,17 @@ export default class HomeScreen extends Component {
     }
 
     async componentDidMount(){
-        // //promise
-        // axios.get('http://192.168.0.17:3000/categories').then((res, err)=>{
-        //     this.setState({categories: res.data})
-        // })
 
+<<<<<<< HEAD
         alert('RIZKY')
+=======
+        //EDITED BY SOBARI
+>>>>>>> 6fb9d195e2b511d506aa0209e3f15ffc3557c89a
         //async await
         const res = await axios.get('http://192.168.0.17:3000/categories')
         this.setState({categories: res.data})
     }
-
+        //tes push
     render(){
         return (            
             <Container>
