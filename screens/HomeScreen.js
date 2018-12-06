@@ -14,6 +14,7 @@ export default class HomeScreen extends Component {
         //     this.setState({categories: res.data})
         // })
 
+        alert('RIZKY')
         //async await
         const res = await axios.get('http://192.168.0.17:3000/categories')
         this.setState({categories: res.data})
